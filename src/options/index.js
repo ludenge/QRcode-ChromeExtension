@@ -9,7 +9,7 @@ Vue.component("app-component", AppComponent);
 
 new Vue({
   el: "#app",
-  render: createElement => {
-    return createElement(AppComponent);
+  render: h => {
+    return h(AppComponent);
   }
 });

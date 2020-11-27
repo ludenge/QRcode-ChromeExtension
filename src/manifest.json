@@ -7,7 +7,6 @@
     "default_popup": "popup.html",
     "default_icon": "img/icon.png"
   },
-  // "options_page": "options.html",
    "options_ui": {  //选项弹窗模式
       "page": "options.html",
       "open_in_tab": false
