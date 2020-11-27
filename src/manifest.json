@@ -1,0 +1,36 @@
+{
+  "manifest_version": 2,
+  "name": "QRcode",
+  "description": "由网址生成二维码",
+  "version": "1.0.0",
+  "browser_action": {
+    "default_popup": "popup.html",
+    "default_icon": "img/icon.png"
+  },
+  // "options_page": "options.html",
+   "options_ui": {  //选项弹窗模式
+      "page": "options.html",
+      "open_in_tab": false
+    },
+  "icons": {
+    "16": "img/icon.png",
+    "32": "img/icon.png",
+    "64": "img/icon.png",
+    "128": "img/icon.png"
+  },
+  "permissions": [
+    "activeTab",
+    "tabs",
+    "storage"
+  ],
+  "commands": {
+    "_execute_browser_action": {
+      "suggested_key": {
+        "default": "Ctrl+Shift+Q",
+        "mac": "MacCtrl+Shift+Q"
+      },
+      "description": "Opens QRcode"
+    }
+  },
+  "content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self'"
+}
